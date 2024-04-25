@@ -39,7 +39,7 @@ public class Course {
 	@Column(name = "Title")
 	@NotNull
 	@Size(min = 4, max = 50)
-	@Pattern(regexp = "[A-Za-z]+")
+	@Pattern(regexp = "[A-Za-z ]+")
 	private String  title;
 	
 	@Column(name = "Cp")
