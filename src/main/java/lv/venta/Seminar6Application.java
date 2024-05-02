@@ -11,6 +11,7 @@ import lv.venta.Repo.IProfessorRepo;
 import lv.venta.Repo.IStudentRepo;
 import lv.venta.model.Course;
 import lv.venta.model.Degree;
+import lv.venta.model.Grade;
 import lv.venta.model.Professor;
 import lv.venta.model.Student;
 
@@ -42,6 +43,10 @@ public class Seminar6Application {
 				Course c2 = new Course("Algoritmu Teorija", 4, p2);
 				courseRepo.save(c1);
 				courseRepo.save(c2);
+				
+				grRepo.save(new Grade(st1, c1, 8));
+				grRepo.save(new Grade(st1, c2, 3));
+				grRepo.save(new Grade(st2, c1, 9));
 			}
 		};
 	}

@@ -31,10 +31,10 @@ public class Grade {
 	@Setter(value = AccessLevel.NONE)
 	public int idG;
 	
-	@Column(name = "Gralue")
+	@Column(name = "Grvalue")
 	@Min(0)
 	@Max(10)
-	public int gralue;
+	public int grvalue;
 	
 	@ManyToOne
 	@JoinColumn(name = "IdS")
@@ -47,6 +47,6 @@ public class Grade {
 	public Grade(Student student, Course course, int grvalue) {
 		setStudent(student);
 		setCourse(course);
-		setGralue(grvalue);
+		setGrvalue(grvalue);
 	}
 }

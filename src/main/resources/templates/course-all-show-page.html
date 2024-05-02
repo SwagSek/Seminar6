@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<body>
+		<p th:text="${msg}"></p>
+		<table>
+			<tr th:each="course: ${mydata}">
+				<td th:text="${course.getIdC()}"></td>
+				<td th:text="${course.getTitle()}"></td>
+				<td th:text="${course.getCp()}"></td>
+				<td th:text="${course.getProfessor().getName()}"></td>
+				<td th:text="${course.getProfessor().getSurname()}"></td>
+			</tr>
+		</table>
+	</body>
+</html>
