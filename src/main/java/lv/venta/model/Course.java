@@ -56,7 +56,7 @@ public class Course {
 	@JoinTable(name = "CourseProfessorLinkageTable", 
 	joinColumns = @JoinColumn(name="IdC"), 
 	inverseJoinColumns = @JoinColumn(name="IdP"))
-	private Collection<Professor> professors;
+	private Collection<Professor> professors = new ArrayList<Professor>();
 	
 	@OneToMany(mappedBy = "course")
 	@ToString.Exclude

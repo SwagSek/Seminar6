@@ -48,7 +48,7 @@ public class CourseFilterServiceImpl implements ICourseFilterService{
 		if(id <= 0) throw new Exception("Invalid ID.");
 		if(!profRepo.existsById(id)) throw new Exception("Professor with given ID not found");
 		
-		ArrayList<Course> result = courseRepo.findByProfessorIdP(id);
+		ArrayList<Course> result = courseRepo.findByProfessorsIdP(id);
 		if(result.isEmpty()) throw new Exception("There are no courses for this professor.");
 		return result;
 	}
