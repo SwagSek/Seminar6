@@ -37,7 +37,7 @@ public class Grade {
 	public int grvalue;
 	
 	@ManyToOne
-	@JoinColumn(name = "IdS")
+	@JoinColumn(name = "Idpe")
 	public Student student;
 	
 	@ManyToOne

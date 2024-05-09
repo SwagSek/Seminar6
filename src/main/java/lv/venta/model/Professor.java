@@ -1,5 +1,6 @@
 package lv.venta.model;
 
+import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,13 +24,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class Professor extends Person{
-	
-	@Column(name = "IdP")
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Setter(value = AccessLevel.NONE)
-	private int idP;
-	
 	@Column(name = "Degree")
 	@NotNull
 	private Degree degree;

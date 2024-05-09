@@ -49,7 +49,7 @@ public class Course {
 	private int cp;
 	
 	@OneToOne
-	@JoinColumn(name = "IdP")
+	@JoinColumn(name = "Idpe")
 	private Professor professor;
 	
 	@OneToMany(mappedBy = "course")
