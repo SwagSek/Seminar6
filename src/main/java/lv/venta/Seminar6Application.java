@@ -40,7 +40,7 @@ public class Seminar6Application {
 				profRepo.save(p2);
 				
 				Course c1 = new Course("JAVA", 4, p1);
-				Course c2 = new Course("Algoritmu Teorija", 4, p2);
+				Course c2 = new Course("Algoritmu Teorija", 2, p2);
 				courseRepo.save(c1);
 				courseRepo.save(c2);
 				

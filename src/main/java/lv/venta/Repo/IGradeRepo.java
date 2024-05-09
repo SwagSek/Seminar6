@@ -13,7 +13,7 @@ public interface IGradeRepo extends CrudRepository<Grade, Integer>{
 
 	ArrayList<Grade> findByGrvalueLessThan(int i);
 	
-	@Query(nativeQuery = true, value = "SELECT AVG(GRVALUE) WHERE IDC=?1")
+	@Query(nativeQuery = true, value = "SELECT AVG(GRVALUE) FROM GRADE_TABLE WHERE IDC?=1")
 	float calculateAvgGradeByIdCFromDB(int idC);
 
 }
